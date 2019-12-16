@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./src/css/style.min.css">
+    <title>Tamagochi</title>
+</head>
+
+<body>    
+    <div id="app">
+        <h4 class="total-time">total time: 0</h4>
+        <select class="custom-select">
+            <option selected>Select level game</option>
+            <option value="Lazy">Lazy</option>
+            <option value="Pug">Pug</option>           
+        </select>
+        <table class="table table-dark text-center stats">
+            <thead>
+                <tr>
+                    <th scope="col">Food</th>
+                    <th scope="col">Clean</th>
+                    <th scope="col">Happiness</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="food-item"></td>
+                    <td class="clean-item"></td>
+                    <td class="happiness-item"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary eat-btn" disabled>Eat</button>
+            <button type="button" class="btn btn-primary wash-btn" disabled>Wash</button>
+            <button type="button" class="btn btn-primary run-btn" disabled>Run</button>
+            <button type="button" class="btn btn-success start-btn">Start</button>
+        </div>
+    </div>
+    <script src="./src/js/tamagochi/index.js" type="module"></script>
+</body>
+
+</html>
